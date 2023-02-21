@@ -212,7 +212,7 @@ Aşağıdakileri cocukSarkisi fonksiyonunda yapın:
 var maymunSayisi = 5
 
 function cocukSarkisi(maymunSayisi){
-      console.log(maymunSayisi + " " + "küçük maymun yatakta zıplamış, biri düşüp başını çarpmış, Anne doktoru aramış, Doktor çok kızmış: Bir daha yatakta zıplamak yok!");
+      return maymunSayisi + " " + "küçük maymun yatakta zıplamış, biri düşüp başını çarpmış, Anne doktoru aramış, Doktor çok kızmış: Bir daha yatakta zıplamak yok!";
 };
 
 for (let index = maymunSayisi; index > 0; index--) {
@@ -236,17 +236,19 @@ Aşağdakileri notHesapla fonksiyonunda yapın.
 */
 
 function notHesapla(sinavSonucu){
+  let geciciSonuc = 0;
   if (sinavSonucu <= 100 && sinavSonucu >=90) {
-    console.log('A aldın');
+    geciciSonuc = 'A aldın';
   } else if (sinavSonucu <= 89 && sinavSonucu >=80) {
-    console.log('B aldın');
+    geciciSonuc = 'B aldın';
   } else if (sinavSonucu <= 79 && sinavSonucu >=70) {
-    console.log('C aldın');
+    geciciSonuc = 'C aldın';
   } else if (sinavSonucu <= 69 && sinavSonucu >=60) {
-    console.log('D aldın');
+    geciciSonuc = 'D aldın';
   } else if (sinavSonucu <= 59) {
-    console.log('F aldın');
+    geciciSonuc = 'F aldın';
   }
+  return geciciSonuc;
 }
 
 
