@@ -236,7 +236,7 @@ Aşağdakileri notHesapla fonksiyonunda yapın.
 */
 
 function notHesapla(sinavSonucu){
-  let geciciSonuc = 0;
+  let geciciSonuc = "";
   if (sinavSonucu <= 100 && sinavSonucu >=90) {
     geciciSonuc = 'A aldın';
   } else if (sinavSonucu <= 89 && sinavSonucu >=80) {
@@ -250,6 +250,7 @@ function notHesapla(sinavSonucu){
   }
   return geciciSonuc;
 }
+
 
 
 
